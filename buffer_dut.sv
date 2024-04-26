@@ -1,5 +1,5 @@
 // apb_dut - buffer or inverter
-module buffer(
+module buffer_dut(
   input bit clk;
   input bit a;
   input bit en;
@@ -14,4 +14,4 @@ module buffer(
       b <= ~a;
   end  
   
-endmodule: buffer
+endmodule: buffer_dut
