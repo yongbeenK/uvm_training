@@ -23,6 +23,26 @@ make AXI VIP
 **Stage8**
 make RAL
 
+later stage ...
+  verilog
+  
+  systemverilog, systemverilog testbench for small IP
+  
+  perl
+  
+  python
+  
+  regular expression
+  
+  makefile
+  
+  ipxact
+    https://blog.naver.com/PostView.naver?blogId=doksg&logNo=222485928356
+
+  formal verification vs dynamic verification
+
+  VIP: AHB, ATB, ACE, UART, I2C, SPI
+    
 
 
 
