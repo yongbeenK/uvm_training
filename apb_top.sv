@@ -5,7 +5,7 @@ module top;
 bit clk;
   
 // dut
-  apb_dut dut0();
+  buffer_dut dut0();
   
 // env
   apb_env env0();
