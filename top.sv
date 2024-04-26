@@ -2,6 +2,8 @@
 
 module top
 
+// clock
+// interface
+//  run_test();
 
-
-endmoudle
+endmodule
