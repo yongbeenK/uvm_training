@@ -8,7 +8,10 @@ bit clk;
   buffer_dut dut0();
   
 // env
-  apb_env env0();
+  buffer_env env0();
+
+// intf
+  buffer_intf intf0();
   
 // clock
   initial begin
@@ -24,13 +27,15 @@ bit clk;
     run_test();
   end
 
+// connect
+  dut0.clk      = intf0.clk;
+  dut0.a        = intf0.a;
+  dut0.b        = intf0.b;
+  dut0.en       = intf0.en;
+
   initial begin
     //dump waves
     $dumpvars(0,top);
   end
-  
-// interface
-// apb_test_dut0.PSEL      = apb_intf.PSEL;
-// apb_test_dut0.PENABLE   = apb_intf.PEANBLE;
 
 endmodule: top
