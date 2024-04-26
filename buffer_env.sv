@@ -1,5 +1,5 @@
 // apb_env.sv
-class apb_env extends apb_env
+class buffer_env extends uvm_env
 
   function new();
     super.new();
