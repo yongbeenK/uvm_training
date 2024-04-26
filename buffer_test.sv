@@ -33,7 +33,4 @@ class buffer_test extends uvm_test
       
   endtask
     
-
-  
-  
 endclass
