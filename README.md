@@ -8,6 +8,18 @@ add uvm_agent, uvm_driver, uvm_monitor, uvm_sequencer, uvm_sequence, uvm_transac
 **Stage3**
 add virtual sequencer.
 
-**Stage?**
-add RAL
+**Stage4**
+add SRAM
+
+**Stage5**
+make APB VIP
+
+**Stage6**
+make AXI VIP
+
+**Stage7**
+make RAL
+
+
+
 
