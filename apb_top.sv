@@ -1,11 +1,36 @@
 // apb_top
-module top
+module top;
 
+// variable
+bit clk;
+  
 // dut
-  apb_dut apb_test_dut_0();
+  apb_dut dut0();
+  
 // env
+  apb_env env0();
+  
 // clock
-// interface
-// run_test();
+  initial begin
+    clk = 0;
+    env0 = new();
+  end
+  
+  always() begin
+  #5 clk = ~clk;
+  end
 
-endmodule
+  initial begin
+    run_test();
+  end
+
+  initial begin
+    //dump waves
+    $dumpvars(0,top);
+  end
+  
+// interface
+// apb_test_dut0.PSEL      = apb_intf.PSEL;
+// apb_test_dut0.PENABLE   = apb_intf.PEANBLE;
+
+endmodule: top
