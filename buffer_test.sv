@@ -2,18 +2,20 @@
 
 class buffer_test extends uvm_test
   
-  buffer_dut dut;
   `uvm_component_utils(buffer_test)
 
-  function new()
+  function new(string name, uvm_component parent null);
     super.new();
   endfunction
 
+  buffer_dut dut;
+  
   function build_phase();
+    super.build_phase(phase);
     
   endfunction
 
-  task run_phase();
+  virtual task run_phase(uvm_phase phase);
 
     #20
     TBD_intf.a = 1;
@@ -30,7 +32,9 @@ class buffer_test extends uvm_test
     #80
     TBD_intf.a = 1;
     TBD_intf.en = 0;
-      
+
+    super.run_phase(phase);
+    
   endtask
     
 endclass
