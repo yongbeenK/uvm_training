@@ -1,6 +1,7 @@
 # basics uvm_testbench for uvm beginner
 **Stage1**
 only use top, dut(buffer), uvm_test, uvm_env, interface.
+
 go to the --> 
 https://www.edaplayground.com/x/TqAs
 
