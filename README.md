@@ -46,6 +46,8 @@ later stage ...
 
   VIP: AHB, ATB, ACE, UART, I2C, SPI
     
+This project will be new private project for SV or UVM grammer.
+https://www.edaplayground.com/x/UEsQ
 
 
 
